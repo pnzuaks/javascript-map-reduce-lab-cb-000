@@ -9004,8 +9004,9 @@ const issues = [
 
 const issuesWithUpdatedApiUrl = issues.map(function(url) {
   if (issues.url.includes('api.github.com')) {
+    const update = issues.url
     return Object.assign({}, issue, {
-      url: 
+      url:
     })
   }
 })
