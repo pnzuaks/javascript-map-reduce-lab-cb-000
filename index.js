@@ -9036,5 +9036,4 @@ const nonAutomaticIssues =
            <td>${issue.body}</td>
            <td>${issue.created_at}</td>
            <td>${issue.state}</td>
-         </tr>`) +
-       .join('');
+         </tr>`) + join('');
