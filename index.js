@@ -9028,12 +9028,3 @@ const nonAutomaticIssues =
        }
        return issueAll;
      }, []);
-
-const $resultBody = document.getElementById("results");
-     $resultbody.innerHTML = issues.map(issue  =>
-         `<tr>
-           <td>${issue.body}</td>
-           <td>${issue.created_at}</td>
-           <td>${issue.state}</td>
-         </tr>`) +
-       .join('');
