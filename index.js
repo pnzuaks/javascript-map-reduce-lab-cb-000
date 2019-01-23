@@ -9003,5 +9003,5 @@ const issues = [
 
 
 const issuesWithUpdatedApiUrl = issues.map(function(url) {
-  if (issues.)
+  if (issues.url.includes())
 })
