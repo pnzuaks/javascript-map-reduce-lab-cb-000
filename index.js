@@ -9012,3 +9012,9 @@ const theComments = issues.map(issue => {
   return issue.comments_count
 })
 const commentCountAcrossIssues = theComments.reduce((total, comments) => total + comments)
+
+const openIssues = issues.map(issues =>
+  Object.assign({}, issue, {
+    
+  })
+)
