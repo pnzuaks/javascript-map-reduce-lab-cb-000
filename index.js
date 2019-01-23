@@ -9030,10 +9030,12 @@ const nonAutomaticIssues =
      }, []);
 
 
-     const $resultBody = document.getElementById("results");
-     $resultbody.innerHTML = issues.map(issue  =>
-         `<tr>
-           <td>${issue.body}</td>
-           <td>${issue.created_at}</td>
-           <td>${issue.state}</td>
-         </tr>`) + join('');
+     const $tbody = document.getElementById('results');
+     $tbody.innerHTML = nonAutomaticIssues
+       .map(issue => `<tr>
+         <td>${issue.body}</td>
+         <td>${issue.created_at}</td>
+         <td>${issue.state}</td>
+         </tr>`
+       )
+       .join('');
