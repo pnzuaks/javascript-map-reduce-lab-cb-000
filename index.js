@@ -9002,11 +9002,11 @@ const issues = [
 ];
 
 
-const issuesWithUpdatedApiUrl = issues.map(function(url) {
-    return Object.assign({}, issue, {
+const issuesWithUpdatedApiUrl = issues.map(issue =>
+    Object.assign({}, issue, {
       url: issues.url.replace("api.github.com", 'api-v2.github.com')
     })
-})
+)
 
 const theComments = issues.map(issue => {
   return issue.comments_count
