@@ -9019,3 +9019,5 @@ const openIssues = issues.reduce((newIssue, issue) => {
   }
   return newIssue;
 },[]);
+
+const nonAutomaticIssues = 
