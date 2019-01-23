@@ -9008,7 +9008,7 @@ const issuesWithUpdatedApiUrl = issues.map(function(url) {
     })
 })
 
-const commentCountAcrossIssues = issues.map(issue => {
+const theComments = issues.map(issue => {
   return issue.comments_count
 })
-const addedComments = commentCountAcrossIssues.reduce((total, comments) => total + comments)
+const commentCountAcrossIssues = theComments.reduce((total, comments) => total + comments)
